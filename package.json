@@ -2,9 +2,13 @@
   "name": "@serzmerz/redux-saga-promisify-actions",
   "version": "1.0.0",
   "description": "Make promise from your action creator for use it in your components",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "repository": "serzmerz/redux-saga-promisify-actions",
   "scripts": {
-    "test": "test"
+    "build": "babel src -d lib",
+    "lint": "standard src/*.js --fix",
+    "test": "jest",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "redux-saga",
@@ -13,5 +17,20 @@
     "action"
   ],
   "author": "Sergey Tansky",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/runtime": "^7.3.1",
+    "babel-preset-minify": "^0.5.0",
+    "jest": "^24.0.0",
+    "redux-saga": ">=0.15.0",
+    "standard": "^12.0.1"
+  },
+  "peerDependencies": {
+    "@babel/runtime": ">=7.0.0",
+    "redux-saga": ">=0.15.0"
+  }
 }
