@@ -1,0 +1,17 @@
+{
+  "name": "@serzmerz/redux-saga-promisify-actions",
+  "version": "1.0.0",
+  "description": "Make promise from your action creator for use it in your components",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "redux-saga",
+    "redux",
+    "promisify",
+    "action"
+  ],
+  "author": "Sergey Tansky",
+  "license": "MIT"
+}
