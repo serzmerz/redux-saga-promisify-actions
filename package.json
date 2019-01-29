@@ -1,12 +1,12 @@
 {
-  "name": "@serzmerz/redux-saga-promisify-actions",
+  "name": "redux-saga-promisify-actions",
   "version": "1.0.0",
   "description": "Make promise from your action creator for use it in your components",
-  "main": "./lib/index.js",
+  "main": "lib/index.js",
   "repository": "serzmerz/redux-saga-promisify-actions",
   "scripts": {
     "build": "babel src -d lib",
-    "lint": "standard src/*.js --fix",
+    "lint": "standard src/*.js tests/*.js --fix",
     "test": "jest",
     "prepublish": "npm run build"
   },
@@ -32,5 +32,14 @@
   "peerDependencies": {
     "@babel/runtime": ">=7.0.0",
     "redux-saga": ">=0.15.0"
+  },
+  "standard": {
+    "globals": [
+      "jest",
+      "describe",
+      "expect",
+      "beforeEach",
+      "test"
+    ]
   }
 }

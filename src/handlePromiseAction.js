@@ -1,7 +1,7 @@
 import { call, take, all, race, put, takeEvery } from 'redux-saga/effects'
 import { PROMISIFY_SERVICE_ACTION } from './constants'
 
-const getPayload = (data) => (data && data.payload) || data
+export const getPayload = (data) => (data && data.payload) || data
 
 export function * handlePromiseAction (action) {
   const {
